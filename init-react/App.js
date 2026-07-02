@@ -7,7 +7,13 @@ export default function App() {
       <View style={styles.card}>
         <Text style={styles.cardText}>Primeros pasos en la app</Text>
       </View>
-      <StatusBar style="light" />
+      <View style={styles.card}>
+        <Text>abajo</Text>
+        <View style={styles.description}>
+          <Text>descripcion de esta tarjeta</Text>
+        </View>
+      </View>
+      <StatusBar style="dark" />
     </View>
   );
 }
@@ -30,5 +36,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
     color: "#2D4A3E",
+  },
+  description: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    backgroundColor: "#fff",
+    borderRadius: 8,
   },
 });
